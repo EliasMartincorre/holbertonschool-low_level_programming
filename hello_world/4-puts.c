@@ -1,7 +1,11 @@
 #include <stadio.h>
+
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
-{/* Este codigo imprimira un mensaje en pantalla */
-	puts("\"Programming is like building a multilingual puzzle");
-	getchar();
-	return (0);
+puts("\"Programming is like building a multilingual puzzle");
+return (0);
 }
