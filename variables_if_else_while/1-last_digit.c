@@ -14,21 +14,21 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n % 10 > 5)
 {
-printf("%d Last digit of", n);
-printf("%d is", n % 10);
-printf("and is greater than 5\n");
+printf("Last digit of %d", n);
+printf(" is %d", n % 10);
+printf(" and is greater than 5\n");
 }
 if (n % 10 == 0)
 {
-printf("%d Last digit of", n);
-printf("%d is", n % 10);
-printf("and is zero\n");
+printf("Last digit of %d", n);
+printf(" is %d", n % 10);
+printf(" and is zero\n");
 }
 if (n % 10 < 6)
 {
-printf("%d Last digit of", n);
-printf("%d is", n % 10);
-printf("and is zero\n");
+printf("Last digit of %d", n);
+printf(" is %d", n % 10);
+printf(" and is zero\n");
 }
 return (0);
 }
