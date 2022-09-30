@@ -8,8 +8,7 @@ int main(void)
 {
 int a = '0';
 for (a = '0'; a <= '9'; a++)
-	
-if (a != '9')
+	if (a <= '9')
 {
 	putchar(a);
 	putchar(',');
