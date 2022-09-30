@@ -7,11 +7,16 @@
 * Return: 0
 * .
  */
-int main(void)
+int main(void);
 {
-char [10] = "_putchar\n";
-int b;
-for (b = 0; b <= 10; b++)
-putchar(a[b]);
+ putchar('_');
+ putchar('p');
+ putchar('u');
+ putchar('t');
+ putchar('c');
+ putchar('h');
+ putchar('a');
+ putchar('r');
+putchar('\n');
 return (0);
 }
