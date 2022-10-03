@@ -1,24 +1,40 @@
 #include "main.h"
 /**
-  * times_table - tablas del 1 al 9
-  *
-  *
+ * times_table - tablas del 1 al 9
+ *
+ *
  */
 void times_table(void)
-{int  tabla, multiplicador, resultado;
+{
+	int num, mul, prod;
+	
+	for (num = 0; num <= 9; num++)
+	{
+	for (mul = 0; mul <= 9; mul++)
+	{
+	prod = num * mul;
 
-	for (tabla = 0; tabla <= 9; tabla++)
+	if((prod / 10) == 0)
 	{
-	for (multiplicador = 0; multiplicador <= 9; multiplicador++)
+	if (mul == 0)
 	{
-	if (multiplicador != 9)
-	resultado = (tabla *= multiplicador)
-	_putchar(resultado);
-	_putchar(',');
-	_putchar(' ');
-	if else(multiplicador == 9)
-	resultado = (tabla *= multiplicador);
-	_putchar(resultado);
+		_putchar(prod +'0');
+	}
+	else
+	{
+		_putchar(',');
+		_putchar(' ');
+		_putchar(' ');
+	_putchar(prod + '0');
+	}
+	}
+	else
+	{
+		_putchar(',');
+		_putchar(' ');	
+		_putchar((prod / 10) + '0');
+		_putchar((prod % 10) + '0');
+	}
 	}
 	_putchar('\n');
 	}
