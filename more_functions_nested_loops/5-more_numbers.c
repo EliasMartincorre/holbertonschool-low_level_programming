@@ -6,7 +6,7 @@
 */
 void more_numbers(void)
 {
-	int den, mult, in;
+	int den, mult, in, a;
 
 	for (den = 0; den <= 9; den++)
 	{
@@ -15,12 +15,13 @@ void more_numbers(void)
 	_putchar(mult);
 
 	}
-
-	for (in = 10; in <= 14; in++)
+	for (a = 49; a == 49; a++)
+	{
+	for (in = 48; in <= 52; in++)
 
 	{
-	_putchar((in / 10) + '0');
-	_putchar((in % 10) + '0');
+	_putchar((a) && (in));
+	}
 	}
 	_putchar('\n');
 	}
