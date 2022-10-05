@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* print_numbers - imprime numeros deo 0 al 9. + nueva linea
+* print_numbers - lo
 *
-* @num: var
+*
 */
 void print_numbers(void)
 {
