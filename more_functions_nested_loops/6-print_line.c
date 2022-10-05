@@ -12,10 +12,13 @@ if (n <= 0)
 {
 _putchar('\n');
 }
+if (n > 0)
+{
 for (b = 1; b <= n; b++)
 {
 	_putchar('_');
 
 }
 _putchar('\n');
+}
 }
