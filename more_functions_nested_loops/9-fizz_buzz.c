@@ -3,13 +3,13 @@
 /**
  * main- imprimir fix%3 ,buzz%5,fizzbuzz%15
  *
- *
+ *Return: 0
  */
 int main(void)
 {
 	int numeros;
 
-	for (numeros = 1; numeros <= 100; numeros++)
+	for (numeros = 1; numeros <= 99; numeros++)
 	{
 
 		if (numeros % 15 == 0)
@@ -29,6 +29,7 @@ int main(void)
 			printf("%d ", numeros);
 		}
 	}
+	printf("Buzz");
 	printf("\n");
 	return (0);
 }
