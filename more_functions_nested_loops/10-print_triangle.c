@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_triangle ..imprime triangulo en pantalla
+ * print_triangle - imprime triangulo en pantalla
  * @size: tamaño
  *
  */
