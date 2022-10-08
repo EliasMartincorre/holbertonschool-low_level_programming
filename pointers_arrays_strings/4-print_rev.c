@@ -14,4 +14,5 @@ int rev = 0;
 	}
 	for (rev -= 1; rev >= 0; rev--)
 		_putchar(s[rev]);
+		_putchar('\n');
 }
