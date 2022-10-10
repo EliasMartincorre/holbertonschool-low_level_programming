@@ -20,7 +20,6 @@ if (n > 0)
 	else if (contador == (n - 1))
 		{
 	printf("%d", a[contador]);
-	printf("\n");
 		}
 		}
 	}
