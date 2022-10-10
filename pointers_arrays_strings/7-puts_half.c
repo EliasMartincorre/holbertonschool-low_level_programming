@@ -22,7 +22,7 @@ void puts_half(char *str)
 			}
 		else
 			{
-				mitad = (imprime -= 1) / 2;
+				mitad = (imprime - 1) / 2;
 				for (; str[mitad] != '\0'; ++mitad)
 					_putchar(str[mitad]);
 			}
