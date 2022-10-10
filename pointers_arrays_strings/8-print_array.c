@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 	else if (contador == (n - 1))
 		{
 	printf("%d", a[contador]);
-		}
 	printf("\n");
+		}
 		}
 }
