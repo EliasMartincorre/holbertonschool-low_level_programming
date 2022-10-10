@@ -8,7 +8,8 @@
 void print_array(int *a, int n)
 {
 	int contador = 0;
-
+if (n > 0)
+	{
 	for (; contador < n; contador++)
 		{
 	if (contador != (n - 1))
@@ -22,4 +23,6 @@ void print_array(int *a, int n)
 	printf("\n");
 		}
 		}
+	}
+	printf("\n");
 }
