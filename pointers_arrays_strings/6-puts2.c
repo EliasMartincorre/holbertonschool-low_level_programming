@@ -7,7 +7,7 @@
 void puts2(char *str)
 {
 	int imprime = 0;
-
+	if (str[0] != 0)
 	_putchar(str[0]);
 	for (; str[imprime] != '\0'; )
 	{
