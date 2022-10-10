@@ -6,12 +6,13 @@
   *
   * @src: lo que copio
   *
-  * Retunr: copia-
+  * Return: copia-
   */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
-	for ( ; (dest[i] = src[i]) != '\0'; i++)
+
+	for ( ; (dest[i] = src[i]) != '\0' ; i++)
 	{
 	}
 	return (dest);
