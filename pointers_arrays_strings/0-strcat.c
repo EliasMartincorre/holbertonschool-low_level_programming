@@ -4,12 +4,14 @@
  *
  * @dest: archivo donde se concatena
  *
- * @src archivo a concatenar
+ * @src: archivo a concatenar
+ *
+ * Return: archivo concatenado.
  */
 char *_strcat(char *dest, char *src)
 {
 	int i, b;
-	
+
 	i = 0;
 	b = 0;
 
