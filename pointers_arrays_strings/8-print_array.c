@@ -18,11 +18,8 @@ void print_array(int *a, int n)
 
 	else if (contador == (n - 1))
 		{
-	printf("%d\n", a[contador]);
+	printf("%d", a[contador]);
 		}
-	else if ((n - 1) < 0)
-		{
-	printf("  \n");
-		}
+	printf("\n");
 		}
 }
