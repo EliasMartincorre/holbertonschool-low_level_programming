@@ -1,8 +1,8 @@
 #include"main.h"
 /**
-  *
-  *
-  *
+  * reverse_array - los ultimos seran primeros
+  * @a: array a dar vuelta.
+  * @n: dimension del array.
   *
   */
 void reverse_array(int *a, int n)
