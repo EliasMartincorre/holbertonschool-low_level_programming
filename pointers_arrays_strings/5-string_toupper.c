@@ -1,9 +1,10 @@
 #include "main.h"
 /**
+  * string_toupper - change to uppercase
   *
+  * @n: array.
   *
-  *
-  *
+  * Return: Upper
   */
 char *string_toupper(char *n)
 {
