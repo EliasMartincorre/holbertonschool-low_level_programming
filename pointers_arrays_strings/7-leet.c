@@ -11,8 +11,8 @@ char *leet(char *s1)
 	int i = 0;
 	int f;
 
-char s2[10] = {"oleatOLEAT"};
-char s3[10] = {"0134701347"};
+char s2[11] = {"oleatOLEAT"};
+char s3[11] = {"0134701347"};
 
 	for (; s1[i] != '\0'; i++)
 	{
