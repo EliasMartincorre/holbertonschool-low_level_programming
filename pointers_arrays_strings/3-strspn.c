@@ -6,12 +6,18 @@
   * Return: variable int cantidad de bytes.
   */
 unsigned int _strspn(char *s, char *accept)
+{	int i;
+	int a;
+	int cont = 0;
+for (a = 0; accept[a] != '\0'; a++)
 {
-	char *_strchr(char *s, char c);
-
-	unsigned int ret = 0;
-
-	while (*s && _strchr(accept, *s++))
-	ret++;
-	return (ret);
+	for (i = 0; s[i] != 32 && s[i] != '\0'; i++)
+	{
+	if (s[i] == accept[a])
+	{
+	cont++;
+	}
+	}
+	}
+	return (cont);
 }
