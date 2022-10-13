@@ -9,18 +9,17 @@
   */
 char *_strstr(char *haystack, char *needle)
 {
-	int contador;
-	int large;
+int i, j;
 
-		for (contador = 0; haystack[contador] != '\0'; contador++)
-		{
-			for (large = 0; needle[large] != '\0'; large++)
-			{
-				if (haystack[contador] == needle[large] &&
-					haystack[contador + 1] == needle[large + 1] &&
-					haystack[contador + 2] == needle[large + 2])
-					return (needle);
-			}
-		}
-return (0);
+for (i = 0; haystack[i] != '\0'; i++)
+{
+for (j = 0; needle[j] != '\0'; j++)
+{
+if (haystack[i + j] != needle[j])
+break;
 }
+if (!needle[j])
+return (&haystack[i]);
+}
+return (0);
+	}
