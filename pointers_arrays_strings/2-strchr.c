@@ -7,7 +7,7 @@
   */
 char *_strchr(char *s, char c)
 {
-	for (; *s != (char)c; s++)
+	for (; *s != (char)c; )
 	if (!*s++)
 	return (0);
 	return ((char *)s);
