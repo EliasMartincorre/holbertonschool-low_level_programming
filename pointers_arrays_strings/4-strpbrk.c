@@ -1,6 +1,6 @@
 #include "main.h"
-/*
-* _strpbrk - primer byts coincidente.
+/**
+* _strpbrk- primer byts coincidente.
 *
 * @s: puntero
 * @accept: puntero
@@ -17,7 +17,7 @@ for (i = 0; accept[i] != '\0'; i++)
 	{
 	if (accept[i] == s[p])
 	{
-		return (s + p - 5);
+		return (s + p - 6);
 	}
 	}
 }
