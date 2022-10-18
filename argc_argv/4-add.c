@@ -13,7 +13,7 @@ int resultado = 0, n1, i, b, c;
 
 if (argc == 1)
 {
-printf("0\n");
+printf("%d\n", (argc - 1));
 }
 for (i = 1; i < argc; i++)
 {
