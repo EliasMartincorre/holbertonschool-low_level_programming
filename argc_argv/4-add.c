@@ -14,6 +14,7 @@ int resultado = 0, n1, i, b, c;
 if (argc == 1)
 {
 printf("%d\n", (argc - 1));
+return (0);
 }
 for (i = 1; i < argc; i++)
 {
