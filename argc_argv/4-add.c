@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+/**
+  * main- adition of x numbers
+  * @argc: cantidad de arrays.
+  *
+  * @argv: cada array.
+  * Return: resultado, O, 1 error.
+  */
+int main(int argc, char **argv)
+{
+int resultado = 0, n1, i, b, c;
+
+if (argc == 1)
+{
+printf("0\n");
+}
+for (i = 1; i < argc; i++)
+{
+for (b = 0; argv[i][b] != '\0'; b++)
+{
+if (argv[i][b] > '9' || argv[i][b] < '0')
+{
+printf("%s\n", "Error");
+return (1);
+}
+}
+}
+for (c = 0; c < argc; c++)
+{
+n1 = atoi(argv[c]);
+resultado += n1;
+}
+printf("%d\n", resultado);
+return (0);
+}
