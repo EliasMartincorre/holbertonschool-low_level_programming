@@ -20,7 +20,7 @@ if (ptr == NULL)
 return (NULL);
 }
 a = ((max - min) + 1);
-for (i = 0; i <= a; i++, min++)
+for (i = 0; i < a; i++, min++)
 {
 	ptr[i] = min;
 }
