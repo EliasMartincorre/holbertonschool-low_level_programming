@@ -14,7 +14,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-ptr = malloc(nmemb * size * sizeof(unsigned int));
+ptr = calloc(nmemb, sizeof(size));
 if (ptr == NULL)
 {
 	return (NULL);
