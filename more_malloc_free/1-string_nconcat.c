@@ -32,7 +32,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		n = ls2;
 	}
-	ptrconcatenado = malloc((ls1 + n + 1) * sizeof(char));
+	ptrconcatenado = malloc((ls1 + n + 1) * sizeof(*ptrconcatenado));
 	if (ptrconcatenado == NULL)
 	{
 	exit(0);
@@ -45,6 +45,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		ptrconcatenado[i + j] = s2[j];
 	}
-	ptrconcatenado[j + i] = '\0';
+	ptrconcatenado[j + i + 1] = '\0';
 return (ptrconcatenado);
 }
