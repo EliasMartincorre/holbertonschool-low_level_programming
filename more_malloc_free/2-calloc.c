@@ -14,7 +14,7 @@ if (nmemb == 0 || size == 0)
 {
 return (NULL);
 }
-ptr = calloc(nmemb, sizeof(size));
+ptr = calloc(nmemb, sizeof(int));
 if (ptr == NULL)
 {
 	return (NULL);
