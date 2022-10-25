@@ -14,11 +14,11 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL)
 	{
-		lstr1 = 0;
+		s1 = "";
 	}
 	if (s2 == NULL)
 	{
-		lstr2 = 0;
+		s2 = "";
 	}
 	for (i = 0; s1[i]; i++)
 	{
@@ -33,11 +33,11 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	for (i = 0; i <= lstr1; i++)
+	for (i = 0; i < lstr1; i++)
 	{
 		concatenado[i] = s1[i];
 	}
-	for (i = 0; i <= lstr2; i++)
+	for (i = 0; i < lstr2; i++)
 	{
 		concatenado[lstr1 + i] = s2[i];
 		concatenado[lstr1 + lstr2 + 1] = '\0';
