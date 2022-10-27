@@ -9,10 +9,9 @@ void print_dog(struct dog *d)
 {
 	if (d == NULL)
 	{
-		d = malloc(sizeof(struct dog));
-		printf("%s\n", "" ); 
+		return;
 	}
-	if (d->age == 0) 
+	if (d->age == 0)
 	{
 	d->age = 0;
 	}
