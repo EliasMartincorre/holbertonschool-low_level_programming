@@ -6,6 +6,8 @@
   *@height: alto.
   *Return: puntero al inicio del array.
   */
+void free_grid(int **grid, int height);
+
 int **alloc_grid(int width, int height)
 {
 	int i, b;
@@ -34,4 +36,14 @@ int **alloc_grid(int width, int height)
 		}
 	}
 	return (ptr);
+}
+void free_grid(int **grid, int height)
+{
+int i;
+
+for (i = 0; i < height; i++)
+{
+free(grid[i]);
+}
+free(grid);
 }
