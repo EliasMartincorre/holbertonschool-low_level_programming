@@ -21,7 +21,7 @@ str = va_arg(lista, char *);
 
 	if (!str)
 	{
-	str = ("nil");
+	str = "(nil)";
 	}
 if (!separator)
 {
