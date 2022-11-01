@@ -29,7 +29,11 @@ if (!ptr)
 	printf("Error\n");
 	exit(99);
 }
-
+if (num1 == 0 || num2 == 0)
+	{
+	printf("Error\n");
+	exit(100);
+	}
 
 printf("%d\n", ptr (num1, num2));
 return (0);
