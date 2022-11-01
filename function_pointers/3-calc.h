@@ -1,5 +1,11 @@
 #ifndef CALC
 #define CALC
+/**
+  * struct op - tipo de structura necesaria para poder trabajar las funciones.
+  * se usa en get_op_function.
+  * @op: puntero a char.
+  * @f: modelo standar de la funcion.
+  */
 typedef struct op
 {
 	char *op;

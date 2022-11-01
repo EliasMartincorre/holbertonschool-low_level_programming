@@ -2,12 +2,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 /**
-  *
-  *
+  * main - calculadora, recibe los numeros del usuario.
+  * @argc: cantidad de argumentos permitidos
+  * @argv: string a ser convertidos en int. argv[2] operador.
+  * Return: 0 en caso de exito. se imprime resultado en pantalla
   *
   */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int num1, num2;
 	int (*ptr)(int, int);
@@ -22,7 +24,7 @@ num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 ptr = get_op_func(argv[2]);
 
-if(!ptr)
+if (!ptr)
 {
 	printf("Error\n");
 	exit(99);
