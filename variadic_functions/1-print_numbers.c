@@ -14,16 +14,21 @@ va_list lista;
 va_start(lista, n);
 for (i = 0; i < n; i++)
 {
+	if (separator == NULL)
+	{
+		printf("%d", va_arg(lista, int));
+	}
+	else
+	{
 	printf("%d", va_arg(lista, int));
 	if (i != (n - 1))
 			{
 	printf("%s", separator);
 	}
+
+}
 }
 printf("\n");
-if (separator == NULL)
-	{
-	printf(" ");
-	}
+
 	va_end(lista);
 }
