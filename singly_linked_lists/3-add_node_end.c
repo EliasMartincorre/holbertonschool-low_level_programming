@@ -15,7 +15,9 @@ list_t *newnode, *temp;
 newnode = malloc(sizeof(list_t));/**aloja espacio para el nuevo nodo*/
 
 if (newnode == NULL)/**en caso de fallo termina el programa */
+{
 	return (NULL);
+}
 
 	newnode->str = strdup(str);/** copia el string ingresado al miembro del nodo*/
 if (newnode->str == NULL)
