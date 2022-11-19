@@ -1,62 +1,45 @@
-#include"lists.h"
+#include "lists.h"
 /**
-  * insert_nodeint_at_index - add node in espesifique position.
-  * @head: double pointer at the start of the list.
-  * @idx: index.
-  * @n: data n type int.
-  * Return: pointer to a new node.
-  */
+ * insert_nodeint_at_index - insert node in specifik position.
+ * @head: double pointer to begginin of the list.
+ * @idx: index to insert new node.
+ * @n: data int of member n.
+ *
+ * Return: new_node.
+ */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	unsigned int count = 0, iteracion = 1;
-	listint_t *temp, *auxiliar;
+	listint_t *temp = *head;
+	unsigned int node;
 
-	temp = malloc(sizeof(listint_t));
+listint_t *newnode = malloc(sizeof(listint_t));/**allocate memory*/
 
-	if (temp == NULL)
+	if (newnode == NULL)/** verification of succefuly allocate*/
 	{
 		return (NULL);
 	}
-	count = listint_len(*head);
 
-	if (idx > count)
-	{
-		return (NULL);
-	}
 	if (idx == 0)
 	{
-		temp->next = *head;
-		*head = temp;
-		return (temp);
-	}
-	else
-	{
-		auxiliar = *head;
+		newnode->next = temp;/** index cero new node equal head*/
+		*head = newnode;
 
-		for (; iteracion < idx ; iteracion++)
+		return (newnode);
+	}
+
+	for (node = 0; node < (idx - 1); node++)/** recorre el index*/
+	{
+		if (temp == NULL || temp->next == NULL)/** verifica index no out of list*/
 		{
-			auxiliar = auxiliar->next;
+			return (NULL);
 		}
 
-temp->next = auxiliar->next;
-auxiliar->next = temp;
-temp->n = n;
+		temp = temp->next;/** avanza al siguiente nodo*/
 	}
-return (temp);
-}
-/**
- * listint_len - lenght of the list.
- * @h: pointer at start of the list.
- * Return: length.
- */
-size_t listint_len(const listint_t *h)
-{
-	size_t len = 0;
 
-	while (h)
-	{
-	len += 1;
-	h = h->next;
-	}
-	return (len);
+	newnode->next = temp->next;/**nuevo nodo apunta al siguiente index */
+	temp->next = newnode;/** el nodo anterior aputa al nodo insertado*/
+	newnode->n = n;/** se asigna el valor ingresado al member n*/
+	return (newnode);
 }
+
