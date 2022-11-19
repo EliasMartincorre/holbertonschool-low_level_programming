@@ -18,7 +18,7 @@ if (index == 0)/**delete head, first element*/
 {
 	*head = auxiliar->next;
 	free(auxiliar);
-	return (1);
+
 }
 while (iterar < position)/** search inde position*/
 {
