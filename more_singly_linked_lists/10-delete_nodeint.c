@@ -8,7 +8,7 @@
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 listint_t *auxiliar = *head, *nextnode;/**nodos auxiliares*/
-unsigned int position = index - 1, iterar = 1;/**variable recorrer la list*/
+unsigned int position = index - 1, iterar = 0;/**variable recorrer la list*/
 
 if (auxiliar == NULL)/**verificacion de lista vacia*/
 {
@@ -18,6 +18,8 @@ if (index == 0)/**delete head, first element*/
 {
 	*head = auxiliar->next;
 	free(auxiliar);
+	return (1);
+
 
 }
 while (iterar < position)/** search inde position*/
