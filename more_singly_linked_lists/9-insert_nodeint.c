@@ -14,15 +14,15 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 
 listint_t *newnode = malloc(sizeof(listint_t));/**allocate memory*/
 
-	if (newnode == NULL)/** verification of succefuly allocate*/
+	if (newnode || *HEAD == NULL)/** verification of succefuly allocate*/
 	{
 		return (NULL);
 	}
-
+	newnode->n = n;/** se asigna el valor ingresado al member n*/
 	if (idx == 0)
 	{
-		newnode->next = temp;/** index cero new node equal head*/
-		*head = newnode;
+		newnode->next = Itemp;/** index cero new node equal head*/
+		*head = newnode;I
 
 		return (newnode);
 	}
@@ -39,7 +39,6 @@ listint_t *newnode = malloc(sizeof(listint_t));/**allocate memory*/
 
 	newnode->next = temp->next;/**nuevo nodo apunta al siguiente index */
 	temp->next = newnode;/** el nodo anterior aputa al nodo insertado*/
-	newnode->n = n;/** se asigna el valor ingresado al member n*/
 	return (newnode);
 }
 
