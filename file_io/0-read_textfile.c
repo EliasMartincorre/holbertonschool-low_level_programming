@@ -48,6 +48,6 @@ if (w == -1)
 	return (0);
 }
 	close(fd);
-	free(buf);
+	free(buffer);
 	return (r);
 }
