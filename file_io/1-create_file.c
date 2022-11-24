@@ -19,7 +19,7 @@ if (fd1 < 0)
 {
 	return (-1);
 }
-while (text_content)
+while (text_content && *(text_content + length))
 {
 	length++;
 }
