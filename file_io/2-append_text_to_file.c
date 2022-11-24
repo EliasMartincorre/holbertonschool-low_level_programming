@@ -21,7 +21,7 @@ if (fd < 0)/**se verifica el exito*/
 if (text_content == NULL)/** verificacion de nulidad del string*/
 {
 	close(fd);/**si es nulo se cierra el archivo*/
-	return (-1);
+	return (1);
 }
 while (*(text_content + length))/** se determina el largo del string*/
 {
