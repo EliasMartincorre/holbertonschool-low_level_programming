@@ -13,7 +13,7 @@ if (filename == NULL)/** verificacion de nulidad*/
 {
 	return (-1);
 }
-fd = open(filename, O_RDWR | FAPPEND);/**open file, and add the end*/
+fd = open(filename, O_RDWR | O_APPEND);/**open file, and add the end*/
 if (fd < 0)/**se verifica el exito*/
 {
 	return (-1);
