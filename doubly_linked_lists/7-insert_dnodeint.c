@@ -31,7 +31,7 @@ dlistint_t *newnode = malloc(sizeof(dlistint_t));/**allocate memory*/
 
 	for (node = 0; node < (idx - 1); node++)/** recorre el index*/
 	{
-		if (temp == NULL || temp->next == NULL)/** verifica index no out of list*/
+		if (temp == NULL)/** verifica index no out of list*/
 		{
 			return (NULL);
 		}
@@ -42,6 +42,7 @@ dlistint_t *newnode = malloc(sizeof(dlistint_t));/**allocate memory*/
 	newnode->next = temp->next;/**nuevo nodo apunta al siguiente index */
 	newnode->prev = temp;
 	temp->next = newnode;/** el nodo anterior aputa al nodo insertado*/
+	temp->next->prev = newnode;
 	return (newnode);
 }
 
