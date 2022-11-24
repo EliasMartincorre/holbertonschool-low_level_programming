@@ -15,19 +15,19 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **head, size_t idx, int n)
 dlistint_t *newnode = malloc(sizeof(dlistint_t));/**allocate memory*/
 
 	if (newnode == NULL)/** verification of succefuly allocate*/
-	{
+		{
 		return (NULL);
-	}
+		}
 	newnode->n = n; /** se asigna el valor ingresado al member n*/
 
 	if (idx == 0)
-	{
-		newnode->next = temp;/** index cero new node equal head*/
-		newnode->prev = NULL;
-		*head = newnode;
-
-		return (newnode);
-	}
+		{
+		return (add_dnodeint(head, n));
+		}
+	if (temp->next == NULL)
+		{
+		return (add_dnodeint_end(head, n));
+		}
 
 	for (node = 0; node < (idx - 1); node++)/** recorre el index*/
 	{
