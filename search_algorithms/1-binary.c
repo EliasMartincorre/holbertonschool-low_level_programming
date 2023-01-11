@@ -30,7 +30,6 @@ print_array(array, size, i);
 		else if (array[middle] == value)
 		{
 			i++;
-			i++;
 			print_array(array, size, i);
 			index = middle;
 			break;
@@ -52,6 +51,7 @@ void print_array(const int *array, size_t size, size_t i)
 	{
 		i--;
 	}
+	printf("Searching in array: ");
 while (array && i < size)
 {
 if (i < size - 1)
