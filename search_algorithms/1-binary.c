@@ -1,53 +1,68 @@
 #include"search_algos.h"
 /**
-  *
-  *
-  *
-  *
+  * binary_search - binary search.
+  * @array: array location.
+  * @size: size of array.
+  * @value: valor buscado
+  * Return: index or -1.
   */
 int binary_search(int *array, size_t size, int value)
 {
-	size_t i = 0, midlle, j;
-	int index = 0;
-midlle = size /2;
+	size_t i = 0, middle = size / 2;
+	int index = -1;
 
-	for ( ; i < size; i++)
+
+print_array(array, size, i);
+	for ( ; i < size;)
 	{
-		/**printf("searching in array %d", array[i]);*/
-		if (array[midlle] > value)
+		if (array[middle] > value)
 		{
-		size = midlle - 1;
-			midlle = (size - i) / 2;
-		/**	j = i;
-			for (j = i; j < size; j++)
-			{*/
-				printf("searching in array %d\n", array[i]);
-	/**		}*/
+		size = middle - 1;
+		middle = ((size + i) / 2);
+		print_array(array, size, i);
 		}
-		else if (array[midlle] < value)
+		else if (array[middle] < value)
 		{
-			i = midlle + 1;
-			midlle = (size + i) /2;
-			j = i;
-for (; j < size; j++)
-             {
-                  printf("searching in array %d\n", array[j]);
-            }
+			i = middle + 1;
+			middle = ((size + i) / 2);
+			print_array(array, size, i);
 		}
-		else if (array[midlle] == value)
+		else if (array[middle] == value)
 		{
-			index = midlle;
+			i++;
+			i++;
+			print_array(array, size, i);
+			index = middle;
 			break;
 		}
 	}
-	if (index == 0)
-	{
-		return -1;
-	}
-	else
 		return (index);
 }
 
-
-	
-
+/**
+ * print_array - Prints an array of integers
+ *
+ * @array: The array to be printed
+ * @size: Number of elements in @array
+ * @i: kkkk.
+ */
+void print_array(const int *array, size_t size, size_t i)
+{
+	if (size == i)
+	{
+		i--;
+	}
+while (array && i < size)
+{
+if (i < size - 1)
+{
+printf("%d, ", array[i]);
+}
+else
+{
+printf("%d", array[i]);
+}
+++i;
+}
+printf("\n");
+}
