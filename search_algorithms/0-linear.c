@@ -4,7 +4,7 @@
   * @array: point of the first elemento of the array.
   * @size: size of array.
   * @value: value to will be found.
-  * Return: index of the eelement equal value. or -1.
+  * Return: index of the element equal value. or -1.
   */
 int linear_search(int *array, size_t size, int value)
 {
